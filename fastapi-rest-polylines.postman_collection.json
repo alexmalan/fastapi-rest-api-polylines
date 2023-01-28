@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "918dfa78-fc4d-47f6-a899-5782ce5d9a26",
+		"name": "fastapi-rest-polylines",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11323477"
+	},
+	"item": [
+		{
+			"name": "ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/polys",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"polys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/polys/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"polys",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE FAST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"fast_1\",\n    \"npinput\": \"[[15160, 4840], [15240, 4800], [15240, 4720], [15200, 4640], [15080, 4520], [14960, 4640], [14920, 4720], [14920, 4800], [15000, 4840], [15080, 4800]]\",\n    \"algorithm\": \"fast\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/polys",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"polys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE ROURKE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"rourke_1\",\n    \"npinput\": \"[[15160, 4840], [15240, 4800], [15240, 4720], [15200, 4640], [15080, 4520], [14960, 4640], [14920, 4720], [14920, 4800], [15000, 4840], [15080, 4800]]\",\n    \"algorithm\": \"rourke\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/polys",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"polys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE FLOOD",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"flood_1\",\n    \"npinput\": \"[[15160, 4840], [15240, 4800], [15240, 4720], [15200, 4640], [15080, 4520], [14960, 4640], [14920, 4720], [14920, 4800], [15000, 4840], [15080, 4800]]\",\n    \"algorithm\": \"flood\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/polys",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"polys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/polys/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"polys",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
